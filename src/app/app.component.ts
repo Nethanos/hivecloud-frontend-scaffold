@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiHandlerService } from './services/api-handler.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+
+  constructor(apiHandlerService: ApiHandlerService) {
+    
+  }
+
   title = 'hivecloud-frontend-scaffold';
 }
